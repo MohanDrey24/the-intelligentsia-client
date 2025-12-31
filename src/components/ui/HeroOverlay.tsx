@@ -7,8 +7,8 @@ export default function HeroOverlay() {
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{
-        duration: 0.2,
-        delay: 1.6,
+        duration: 0.8,
+        delay: 2.2,
         ease: "easeInOut",
       }}
       style={{ background: "transparent" }}
@@ -28,11 +28,11 @@ export default function HeroOverlay() {
               height="100"
               fill="black"
               transform="translate(-25 -25) rotate(45 25 25)"
-              initial={{ scale: 0.01 }}
+              initial={{ scale: 0.0001 }}
               animate={{ scale: 2.2, rotate: 180 }}
               transition={{
-                duration: 1.2,
-                delay: 0.4,
+                duration: 1.8,
+                delay: 1,
                 ease: [0.76, 0, 0.24, 1],
               }}
               style={{ transformBox: "fill-box", transformOrigin: "50% 50%" }}
