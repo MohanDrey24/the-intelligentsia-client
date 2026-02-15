@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import BelowHero from "../components/ui/BelowHero";
-import HeroTitle from "../components/ui/HeroTitle";
-import HeroOverlay from "../components/ui/HeroOverlay";
+import BelowHero from "@/components/ui/BelowHero";
+import HeroTitle from "@/components/ui/HeroTitle";
+import HeroOverlay from "@/components/ui/HeroOverlay";
 
 export default function Home() {
   return (

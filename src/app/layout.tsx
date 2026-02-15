@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Anton } from "next/font/google";
 import "./globals.css";
-import { AnimatePresence } from "motion/react";
+import { LayoutClient } from "./layout-client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,15 +34,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const fontVars = `${geistSans.variable} ${anton.variable} ${inter.variable} ${geistMono.variable}`;
+
   return (
     <html lang="en">
-      <AnimatePresence>
-        <body
-          className={`${geistSans.variable} ${anton.variable} ${inter.variable} ${geistMono.variable} antialiased`}
-        >
-          {children}
-        </body>
-      </AnimatePresence>
+      <LayoutClient fontVars={fontVars}>{children}</LayoutClient>
     </html>
   );
 }
