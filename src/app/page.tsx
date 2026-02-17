@@ -8,12 +8,20 @@ import HeroOverlay from "@/components/ui/HeroOverlay";
 export default function Home() {
   return (
     <>
-      <div className="relative min-h-screen w-full overflow-hidden">
+      <div className="relative h-screen w-full overflow-hidden">
         <Image
-          src="/assets/hero.png"
-          alt="hero"
+          src="/assets/school-of-athens.jpg"
+          alt="hero background"
           fill
-          className="object-cover filter hue-rotate-15"
+          className="absolute object-cover z-10"
+          priority
+        />
+
+        <Image
+          src="/assets/school-of-athens-people.png"
+          alt="hero foreground"
+          fill
+          className="absolute object-cover z-20"
           priority
         />
 
@@ -22,7 +30,7 @@ export default function Home() {
         <HeroOverlay />
       </div>
 
-      <BelowHero />
+      {/* <BelowHero /> */}
     </>
   );
 }

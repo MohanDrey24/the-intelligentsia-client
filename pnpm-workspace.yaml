@@ -1,2 +1,6 @@
+packages:
+  - "." # your root project
+  # - "packages/*" # uncomment if you have sub-packages
+
 ignoredBuiltDependencies:
   - sharp
